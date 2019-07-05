@@ -1,0 +1,415 @@
+
+@font-face {
+	font-family: 'Geomanist';
+	src: url('../fonts/Geomanist-Light.ttf');
+	src: format('truetype');
+}
+
+body {
+font-family: 'Geomanist', Helvetica, sans-serif;
+font-size: 18px;
+line-height: 1.44444;
+height: 100%;
+width: 100%;
+margin: 0;
+padding-top: 16px;
+border:0;
+background-color: #fff;
+color: #3e3e3e;
+
+}
+
+/*..............top container...............*/
+
+.container {
+	position:relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow: visible;
+	margin: 0;
+	padding:0;
+	border:0;
+	margin: 0 auto;
+    	max-width: 960px;
+    	width: 100%;	
+}
+
+.top-container {
+  min-height: 150px;
+}
+
+
+#logo {
+	position: absolute;
+	padding: 20px;
+	top: 24px;
+	left: 30px;
+	background-image: url("../img/logo-elephant.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+
+}
+
+.top-menu {
+	text-align: right;
+    	margin-bottom: 16px;
+    	padding: 0 10px 0 150px;
+    }
+
+a#my-basket, .count {
+	padding-right: 20px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: right;
+
+
+}
+.count {
+	margin-left: 5px;
+	margin-right: 0px;
+       color: #c79e54;
+
+}
+
+
+a.checkout-link {
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	color: #3e3e3e;
+}
+
+a.checkout-link span {
+      color: #c79e54;
+}
+
+.contact {
+	font-size: 15px;
+	padding-right: 20px;
+	white-space: nowrap;
+	text-align: right;
+
+}
+
+/*................search.................*/
+
+.form {
+	text-align: right;
+	padding: 0 10px 0 150px;
+}
+
+#search-form {
+	display: inline-block;
+	border: 1px solid #e1e1e1;
+    	text-align: right;
+   	padding: 3px 6px 1px 6px;
+    	border-radius: 4px;
+    	width: 185px;
+    	height: 24px;
+}
+    
+.search-field {
+    line-height: 24px;
+}
+
+.search-field {
+    float: left;
+    background-color: transparent;
+    width: 120px;
+}
+
+input {
+margin: 0;
+padding: 0;
+border:none;
+
+}
+
+.search {
+background-image: url("../img/search-icon.png");
+background-size: 25px;
+background-repeat: no-repeat;
+background-color: white;
+float: right;
+border-left: 1px solid #e5e5e5;
+width: 25px;
+height: 25px;
+cursor: pointer;
+}
+
+/*..............dropdown menu.............*/
+
+.dropdown-menu {
+	width: 100%;
+}
+
+.nav {
+   border-top: solid 1px #eaeaea;
+   text-align: center;
+
+}
+.nav ul {
+  zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  display: inline-block;
+}
+.nav ul:before,
+.nav ul:after {
+  content: "";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+.nav ul > li {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: block;
+  padding: 10px 45px;
+  line-height: 1.2em;
+  color: #fff;
+  font-size: 14px;
+    color: #3e3e3e; 
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #c79e54;
+ 
+}
+.nav li ul {
+  background: #f5f2ee;
+}
+.nav li ul li {
+  width: 200px;
+  text-transform: none;
+}
+.nav li ul a {
+  border: none;
+}
+.nav li ul a:hover {
+  color: #c79e54;
+
+}
+
+.nav3 ul > li:hover ul li {
+  height: 36px;
+}
+.nav3 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+}
+.nav3 li ul li {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.4s ease-in;
+  -moz-transition: height 0.4s ease-in;
+  -o-transition: height 0.4s ease-in;
+  transition: height 0.4s ease-in;
+}
+
+.text span {
+  padding: 20px;
+}
+
+
+
+/*.......................box.............................*/
+
+
+.boxes .box span {
+    width: 100%;
+    color: #c79e54;
+    border: 1px solid #eaeaea;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0 1px 0;
+    display: block;
+
+}
+
+.box {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.left {
+  padding-right: 5px;
+}
+
+.right {
+  padding-left: 5px;
+}
+
+/*.................main container.....................*/
+
+.main-container {
+      background-color: #f1e6d4;
+      border-top: 1px solid  #eaeaea;
+      border-bottom: 1px solid  #eaeaea;
+      height: 1000px;
+}
+
+.banner {
+  border-bottom: 1px solid #e3c086;
+}
+
+.banner  img {
+    opacity: 0.7;
+    width: 100%;
+    clear: both;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 35px 0;
+}
+
+
+
+/*...............products area.......................*/
+
+.products {
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.bg-col {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f5f2ee;
+  width: 250px;
+  height: 250px;
+  z-index: 1;
+}
+
+.stretch {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+
+.bg-col .sale {
+    display: block;
+    width: 60px;
+    height: 62px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*.....................decor.......................*/
+
+.decor {
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 30px;
+}
+
+
+
+/*.....................footer.......................*/
+
+footer {
+position: relative;
+height: auto;
+width: 100%;
+background: #fff;
+}
+
+footer .wrap {
+    margin: 0 auto;
+    white-space: nowrap;
+    font-size: 0;
+    border-bottom: 1px solid #eaeaea;
+}
+footer .wrap .sub {
+    position: relative;
+    display: inline-block;
+    color: #3e3e3e;
+    width: 33%;
+    padding: 27px 10px;
+    border-right: 1px solid #eaeaea;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+footer .wrap .sub ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .wrap .sub ul.first {
+  list-style-type: none;
+  padding-right: 85px;
+  margin: 0;
+}
+
+footer .wrap .sub ul.third {
+  list-style-type: none;
+  padding-left: 85px;
+  margin: 0;
+}
+
+
+footer .wrap .sub ul li strong {
+  text-transform: uppercase;
+  color: #555;
+  line-height: 30px;
+}
+
+
+.contact-set {
+
+  padding-top: 20px;
+}
+
+footer .wrap .sub:last-child {
+    border: 0px;
+}
+
+footer .payments {
+  background-color: #f5f2ee;
+  padding: 0;
+  margin:0;
+  text-align: center;
+}
+
+footer .safe-payments {
+  display: inline-block;
+}
+
+footer .safe-payments p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+footer .safe-payments img {
+  margin-bottom: 40px;
+}

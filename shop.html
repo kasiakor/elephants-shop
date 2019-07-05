@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/style-shop.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  </head>
+<body>
+<header id="header">
+	<div class="top-container container">
+			<div id="logo"></div>
+			<div class="top-menu">
+				<span class="contact">Contact: +435 3456 345</span>
+				<a id="my-basket">My basket:<span class="count">0</span></a>
+				<a class="checkout-link" href="/cart"><span>Checkout</span></a>
+			</div>
+			<div class="form">
+              <form id="search-form">
+              <input class="search-field" type="text" placeholder="Search" required>
+              <input type="submit" value="" name="submit" class="search">
+              </form>
+			</div>
+	</div>
+	<div class="dropdown-menu container">
+      <nav class="nav nav3">
+        <ul>
+            <li>
+                <a href="#">Shop by collection</a>
+                <ul class="selection">
+                    <li class="new-arr"><a href="#">New arrivals</a></li>
+                    <li class="lin-ed"><a href="#">Limited editions</a></li>
+                    <li class="best-sel"><a href="#">Best sellers</a></li>
+                    <li class="sale-prod"><a href="#">Sale</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Shop by product</a>
+                <ul class="selection">
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Candles</a></li>
+                    <li><a href="#">T-shirts</a></li>
+                    <li><a href="#">Mugs</a></li>
+                    <li><a href="#">Posters</a></li>
+                    <li><a href="#">Cushions</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Bed linen</a></li>
+                    <li><a href="#">Art</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Shop by price</a>
+                <ul class="selection">
+                    <li><a href="#">£0 - £35</a></li>
+                    <li><a href="#">£35 - £70</a></li>
+                    <li><a href="#">£70+</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+	</div>
+	<div class="container boxes">
+		<div class="left box">
+			<span>Free delivery over £70</span>
+		</div><!--
+		--><div class="right box">
+			<span>15% off your first delivery</span>
+		</div>
+	</div>
+</header> 
+	<main id="content" role="main">
+		<section>
+			<div class = "main-container">
+				<div class="container">
+					<div class="banner">
+						<img src="img/e5.jpg">
+					</div> 
+					<div class="products">
+						<div class="bg-col"><img class="selected" src="img/e-design1.png" />
+						</div>
+						<div class="bg-col">
+							<span class ="sale"><img src ="img/sale3.png"></span>
+						</div>
+						<div class="bg-col">
+						</div>
+						<span class="stretch"></span>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="decor">
+					<img src="img/e-design1.png">
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<div class="container">
+			<div class="wrap">
+				<div class="sub">
+					<ul class="first">
+						<li><strong>Company</strong></li>
+						<li>About Us</li>
+						<li>Wholesale Enquiries</li>
+						<li>Press Enquiries</li>
+						<li>Commission Us</li>
+					</ul>
+				</div>
+				<div class="sub">
+					<ul class="second">
+						<li><strong>Customer Service</strong></li>
+						<li>Contact Us</li>
+						<li>Buying guide & Faqs</li>
+						<li>Terms & Conditions</li>
+						<li>Privacy & Cookie Policy</li>
+					</ul>
+				</div>
+				<div class="sub">
+					<ul class="third">
+						<li><strong>Connect</strong></li>
+						<img class="contact-set" src="img/contact-set.png">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="payments">
+			<div class="safe-payments">
+			<p>Your payments are safe and secure:</p>
+				<img src="img/safe-payment.png">
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" href="js/main.js"></script>
+	<script>
+      var productImgs;
+      var strproductImgs;
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "data.json", "true");
+      xhr.responseType = "text";
+      
+      xhr.send();
+      
+      xhr.onload = function(){
+        if(xhr.status === 200 && xhr.readyState === 4) {
+          strproductImgs = JSON.stringify(xhr.responseText);
+          productImgs = JSON.parse(strproductImgs);
+          console.log(productImgs);
+        } 
+      }
+      
+      
+       $('.selection .new-arr a').click(function() {
+       var elems = document.getElementsByClassName("selected");
+        for (var i = 0; i < elems.length; i+= 1) {
+            elems[i].src = "img/img-shop/0_150.jpg";
+            elems[i].width ="250";
+            elems[i].height ="250";  
+          
+        }
+          
+       });
+    
+   
+    </script>
+</body>
+</html>
